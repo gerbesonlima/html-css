@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesonalizando links</title>
+   
+        body{
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            background-color: rgb(194, 189, 182);
+            text-align: center;
+            text-decoration: blue;
+        }
+        li{
+            text-align: justify;
+            text-align: center;
+           
+            
+        }
+
+        a {
+
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bolder;
+            
+        }
+        a:visited{
+            color:rgba(0, 0, 0, 0.596)
+        }
+
+        div {
+            
+            width: 450px;
+            right: 450px;
+            background-color: rgb(195, 194, 202);
+            display:flex;
+                       
+        }
+        a:hover{
+
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: brown;
+        }
+
+        a::after{
+            content: " ❤";
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        a::before{
+            content: " ❤";
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        .especial::after{
+            content: " ◙";
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        .especial::before{
+            content: " ◙";
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        .especial{
+             background-color: aqua;      
+            color:darkgreen
+
+          }
+    
+
+       
+      
+          
+
+          </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <div class=menu> <li><a href="https://www.youtube.com/">Youtube</a></li>
+    <li><a href="https://www.jw.org/pt/" class="especial">jw.org</a></li>
+    <li><a href="https://wol.jw.org/pt/wol/h/r5/lp-t">Biblioteca eletrônica</a></li>
+</div>
+</body>
+</html>
